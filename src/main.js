@@ -1,5 +1,3 @@
-import './style.css'
-
 // mobile menu toggle (smooth open/close)
 const menuButton = document.getElementById('menu-button')
 const mobileMenu = document.getElementById('mobile-menu')
