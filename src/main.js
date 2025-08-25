@@ -1,16 +1,6 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
-
-
-const counterEl = document.querySelector('#counter')
-if (counterEl) {
-  setupCounter(counterEl)
-}
-
-// Mobile menu toggle (smooth open/close)
+// mobile menu toggle (smooth open/close)
 const menuButton = document.getElementById('menu-button')
 const mobileMenu = document.getElementById('mobile-menu')
 

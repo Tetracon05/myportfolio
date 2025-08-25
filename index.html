@@ -2,11 +2,26 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>hackintosher portfolio</title>
     
-    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              dmserif: ['DM Serif Text', 'serif'],
+              dmsans: ['DM Sans', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
 
     <!-- dmserif font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +38,7 @@
     <nav class="fixed inset-x-0 top-0 z-50 backdrop-blur text-white">
         <div class="mx-auto max-w-6xl px-4">
           <div class="flex h-14 items-center justify-between">
-            <a href="#" class="text-lg font-semibold tracking-tight">MyPortfolio</a>
+            <a href="#" class="text-lg font-semibold tracking-tight">hackintosher portfolio</a>
             <div class="hidden items-center gap-6 sm:flex">
               <a href="#about" class="font-dmsans transition-colors hover:text-gray-400">about</a>
               <a href="#contact" class="font-dmsans font-bold rounded-lg bg-white px-3 py-1.5 text-black transition-colors hover:bg-gray-400">contact</a>
@@ -41,10 +56,8 @@
     <!-- Mobile menu -->
     <div id="mobile-menu" class="sm:hidden fixed inset-x-0 top-14 z-40 hidden border-t border-white/10 backdrop-blur transition-all duration-300 ease-out opacity-0 -translate-y-2 pointer-events-none">
       <div class="mx-auto max-w-6xl px-4 py-3">
-        <nav class="flex flex-col gap-2">
-          <a href="#" class="font-dmsans px-2 py-2 text-white/90 hover:bg-white/10 ">projects</a>
-          <a href="#" class="font-dmsans px-2 py-2 text-white/90 hover:bg-white/10">about</a>
-          <a href="#" class="font-dmsans rounded-md bg-white px-2 py-2 text-center font-bold text-black hover:bg-white/90">contact</a>
+          <a href="#about" class="font-dmsans px-2 py-2 text-white/90 hover:bg-white/10">about</a>
+          <a href="#contact" class="font-dmsans rounded-md bg-white px-2 py-2 text-center font-bold text-black hover:bg-white/90">contact</a>
         </nav>
       </div>
     </div>
@@ -110,7 +123,7 @@
                 </span>
                 <span class="block">
                   <span class="font-semibold text-white before:content-['•'] before:mr-2">custom web & desktop apps</span><br>
-                  <span class="text-white/80">i’ve built several custom websites and a desktop application tailored for small businesses and personal projects.</span>
+                  <span class="text-white/80">i've built several custom websites and a desktop application tailored for small businesses and personal projects.</span>
                 </span>
               </p>
             </div>
